@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const path = require('path');
 const Flight = require('./models/Flight');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '.env') });
 
 const flights = [
   {
